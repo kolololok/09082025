@@ -18,7 +18,7 @@
     }
 
     .overlay {
-      background-color: #f5f5dc; /* Jasny beż */
+      background-color: rgba(245, 245, 220, 0.85); /* Jasny beż z przezroczystością */
       min-height: 100vh;
       padding: 30px 20px;
       display: flex;
@@ -35,11 +35,11 @@
 
     /* Nowy styl dla obrazka */
     img {
-      width: 100%; /* Obrazek wypełnia dostępne miejsce */
-      max-width: 900px; /* Możemy zmienić max-width, aby nie przekroczyć szerokości */
-      height: auto; /* Utrzymanie proporcji */
-      margin-bottom: 30px; /* Większa przestrzeń poniżej obrazka */
-      object-fit: cover; /* Zapełnia kontener, ale zachowuje proporcje */
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      margin-bottom: 30px;
+      object-fit: cover;
       filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5)); /* Cień */
     }
 
@@ -61,10 +61,19 @@
     /* Styl dla SVG */
     .great-vibes {
       font-family: 'Great Vibes', cursive;
+      font-size: 10vw; /* Zmienna czcionka w zależności od szerokości okna */
     }
 
     .antykwa-poltawskiego {
       font-family: 'Antykwa Poltawskiego', serif;
+      font-size: 5vw; /* Zmienna czcionka w zależności od szerokości okna */
+    }
+
+    /* Styl dla responsywnych linków */
+    .button {
+      font-size: 1.2em;
+      padding: 10px 20px;
+      margin: 5px;
     }
   </style>
 </head>
@@ -72,17 +81,17 @@
 <body>
   <div class="overlay">
     <!-- Osadź SVG bezpośrednio w HTML -->
-    <svg width="100%" height="100%" viewBox="0 0 2481 1749" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <svg width="100%" height="100%" viewBox="0 0 2481 1749" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
       <g>
-        <text x="690.667px" y="257.4px" class="great-vibes" style="font-size:300px;">Basia</text>
+        <text x="690.667px" y="257.4px" class="great-vibes">Basia</text>
         <text x="1087.8px" y="602.996px" class="great-vibes" style="font-size:200px;">&amp;</text>
-        <text x="860.357px" y="948.593px" class="great-vibes" style="font-size:300px;">Konrad</text>
-        <text x="821.207px" y="1471.05px" class="antykwa-poltawskiego" style="font-style:italic;font-stretch:semi-condensed;font-size:150px;">0<tspan x="898.307px 975.407px 1015.76px 1046.36px 1086.71px 1163.81px 1240.91px 1281.26px 1311.86px 1352.21px 1429.31px 1506.41px 1583.51px " y="1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px ">9 · 08 · 2025</tspan></text>
+        <text x="860.357px" y="948.593px" class="great-vibes">Konrad</text>
+        <text x="821.207px" y="1471.05px" class="antykwa-poltawskiego" style="font-style:italic;">9 · 08 · 2025</text>
       </g>
     </svg>
     <header>Nasze miejsca na mapie</header>
-    <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099!16s%2Fg%2F1232pm15?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ceremonia</a>
-    <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646!16s%2Fg%2F11bwqqcn5v?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Przyjęcie</a>
+    <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099!16s%2Fg%2F1232pm15?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank" aria-label="Ceremonia">Ceremonia</a>
+    <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646!16s%2Fg%2F11bwqqcn5v?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank" aria-label="Przyjęcie">Przyjęcie</a>
   </div>
 </body>
 
