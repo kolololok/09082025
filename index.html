@@ -70,7 +70,6 @@
       font-family: 'Lora', serif;
     }
 
-    /* Ornament */
     .ornament {
       width: 100px;
       border: none;
@@ -78,7 +77,6 @@
       margin: 20px auto;
     }
 
-    /* Licznik */
     #countdown {
       font-size: 22px;
       margin: 20px 0 10px;
@@ -97,7 +95,6 @@
 
 <body>
   <div class="overlay">
-    <!-- SVG z imionami -->
     <svg width="100%" height="100%" viewBox="0 0 2481 1749" xmlns="http://www.w3.org/2000/svg">
       <g>
         <text x="690.667px" y="257.4px" class="great-vibes" style="font-size:320px;">Basia</text>
@@ -110,10 +107,8 @@
     <!-- Licznik -->
     <div id="countdown">Do naszego wielkiego dnia pozostało: ...</div>
 
-    <!-- Ornament -->
     <hr class="ornament">
 
-    <!-- Sekcja z przyciskami -->
     <header>Nasze miejsca na mapie</header>
 
     <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099" target="_blank">💒 Ceremonia</a>
@@ -121,14 +116,15 @@
     <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646" target="_blank">🎉 Przyjęcie</a>
   </div>
 
-  <!-- Skrypt do licznika -->
+  <!-- Skrypt z uwzględnieniem strefy czasowej -->
   <script>
     const countdown = document.getElementById("countdown");
-    const weddingDate = new Date("2025-08-09T00:00:00");
 
     function updateCountdown() {
       const now = new Date();
-      const diff = weddingDate - now;
+      const target = new Date(Date.UTC(2025, 7, 9, 12, 0, 0)); // 14:00 CEST = 12:00 UTC
+
+      const diff = target - now;
 
       if (diff <= 0) {
         countdown.textContent = "To już dziś! ❤️";
