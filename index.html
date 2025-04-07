@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"> 
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Czekamy na WAS!</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Lora', serif;
       background: url('https://images.unsplash.com/photo-1528569937393-e60c05d29b6d?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
       background-size: cover;
-      color: #000; /* Czarny tekst */
+      color: #000;
     }
 
-   .overlay {
-  background-color: #f5f5dc; /* Jasny beż */
-  min-height: 100vh;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+    .overlay {
+      background-color: rgba(245, 245, 220, 0.85);
+      min-height: 100vh;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
     header {
       text-align: center;
@@ -29,36 +31,112 @@
       margin-bottom: 20px;
     }
 
-    img {
-      max-width: 500px; /* Zwiększ rozmiar obrazka */
-      width: 100%; /* Obrazek dostosowuje się do szerokości kontenera */
-      height: auto; /* Zapewni, że obrazek zachowa proporcje */
-      margin-bottom: 20px;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4));
-    }
-
     a.button {
-      background-color: #006400; /* Ciemna zieleń */
-      color: black; /* Czarny tekst w przycisku */
-      padding: 15px 25px;
+      background-color: #2E8B57;
+      color: black;
+      padding: 18px 30px;
       text-decoration: none;
       border-radius: 30px;
-      font-size: 18px;
+      font-size: 20px;
       margin: 10px;
       transition: background 0.3s;
+      font-family: 'Lora', serif;
     }
 
     a.button:hover {
-      background-color: #228B22; /* Jaśniejsza zieleń przy najechaniu */
+      background-color: #48a072;
+    }
+
+    .great-vibes {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    .lora {
+      font-family: 'Lora', serif;
+    }
+
+    /* Animacja daty */
+    .date-animate {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeSlideUp 2.5s ease-out forwards, pulse 2.5s ease-in-out 3s infinite alternate;
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      from { text-shadow: 0 0 0px #a97c50; }
+      to   { text-shadow: 0 0 20px #a97c50; }
+    }
+
+    @media (max-width: 768px) {
+      a.button {
+        font-size: 1.1em;
+        padding: 14px 22px;
+      }
+    }
+
+    /* Licznik */
+    .countdown {
+      font-family: 'Lora', serif;
+      font-size: 28px;
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 15px 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
+
 <body>
   <div class="overlay">
-    <img src="https://raw.githubusercontent.com/kolololok/09082025/refs/heads/root/a4.svg" alt="BiK">
+    <svg width="100%" height="100%" viewBox="0 0 2481 1749" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <text x="690.667px" y="257.4px" class="great-vibes" style="font-size:320px;">Basia</text>
+        <text x="1087.8px" y="602.996px" class="great-vibes" style="font-size:200px;">&amp;</text>
+        <text x="860.357px" y="948.593px" class="great-vibes" style="font-size:320px;">Konrad</text>
+        <text x="841.207px" y="1271.05px" class="lora date-animate" style="font-size:140px; font-style:italic;">9 · 08 · 2025</text>
+      </g>
+    </svg>
+
     <header>Nasze miejsca na mapie</header>
-    <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099!16s%2Fg%2F1232pm15?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ceremonia</a>
-    <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646!16s%2Fg%2F11bwqqcn5v?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Przyjęcie</a>
+
+    <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099!16s%2Fg%2F1232pm15?entry=ttu" target="_blank">Ceremonia</a>
+
+    <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646!16s%2Fg%2F11bwqqcn5v?entry=ttu" target="_blank">Przyjęcie</a>
+
+    <div class="countdown" id="countdown"></div>
   </div>
+
+  <script>
+    const countdown = document.getElementById("countdown");
+    const targetDate = new Date("2025-08-09T14:00:00+02:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        countdown.innerHTML = "To już dziś!";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `Do naszego dnia zostało: ${days} dni, ${hours} godz, ${minutes} min, ${seconds} sek`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
