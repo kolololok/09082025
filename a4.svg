@@ -1,10 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 2481 1749" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g>
-        <text x="690.667px" y="257.4px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:300px;">Basia</text>
-        <text x="1087.8px" y="602.996px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:200px;">&amp;</text>
-        <text x="860.357px" y="948.593px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:300px;">Konrad</text>
-        <text x="821.207px" y="1471.05px" style="font-family:'AntPoltSemiCond-Italic', 'Antykwa Poltawskiego';font-style:italic;font-stretch:semi-condensed;font-size:150px;">0<tspan x="898.307px 975.407px 1015.76px 1046.36px 1086.71px 1163.81px 1240.91px 1281.26px 1311.86px 1352.21px 1429.31px 1506.41px 1583.51px " y="1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px ">9 · 08 · 2025</tspan></text>
-    </g>
+  <defs>
+    <style type="text/css">
+      <![CDATA[
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Antykwa+Poltawskiego&display=swap');
+
+        .great-vibes {
+          font-family: 'Great Vibes', cursive;
+        }
+
+        .antykwa-poltawskiego {
+          font-family: 'Antykwa Poltawskiego', serif;
+        }
+      ]]>
+    </style>
+  </defs>
+
+  <g>
+    <text x="690.667px" y="257.4px" class="great-vibes" style="font-size:300px;">Basia</text>
+    <text x="1087.8px" y="602.996px" class="great-vibes" style="font-size:200px;">&amp;</text>
+    <text x="860.357px" y="948.593px" class="great-vibes" style="font-size:300px;">Konrad</text>
+    <text x="821.207px" y="1471.05px" class="antykwa-poltawskiego" style="font-style:italic;font-stretch:semi-condensed;font-size:150px;">0<tspan x="898.307px 975.407px 1015.76px 1046.36px 1086.71px 1163.81px 1240.91px 1281.26px 1311.86px 1352.21px 1429.31px 1506.41px 1583.51px " y="1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px 1471.05px ">9 · 08 · 2025</tspan></text>
+  </g>
 </svg>
