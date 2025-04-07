@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moja Strona</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nasze Miejsce</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1528569937393-e60c05d29b6d?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     header {
-      background-color: #008080;
-      color: white;
-      padding: 20px;
       text-align: center;
-      font-size: 24px;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
 
-    main {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    img {
+      max-width: 150px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
     }
 
     a.button {
-      background-color: #00bfa5;
+      background-color: #ff69b4;
       color: white;
-      padding: 15px;
-      text-align: center;
+      padding: 15px 25px;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 30px;
       font-size: 18px;
-      transition: background 0.3s ease;
+      margin: 10px;
+      transition: background 0.3s;
     }
 
     a.button:hover {
-      background-color: #009e88;
-    }
-
-    @media (min-width: 600px) {
-      main {
-        max-width: 600px;
-        margin: auto;
-      }
+      background-color: #ff85c1;
     }
   </style>
 </head>
 <body>
-  <header>
-    Czekamy na Was! 
-  </header>
-  <main>
-    <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099!16s%2Fg%2F1232pm15?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Zobacz kościół</a>
-    <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646!16s%2Fg%2F11bwqqcn5v?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Zobacz Salę</a>
-  </main>
+  <div class="overlay">
+    <img src="https://cdn-icons-png.flaticon.com/512/3082/3082028.png" alt="Ślubna grafika">
+    <header>Nasze miejsca na mapie</header>
+    <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099!16s%2Fg%2F1232pm15?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ceremonia</a>
+    <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646!16s%2Fg%2F11bwqqcn5v?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Przyjęcie</a>
+  </div>
 </body>
 </html>
