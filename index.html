@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <!-- Czcionki -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 
   <meta charset="UTF-8">
@@ -127,6 +126,12 @@
       const diff = target - now;
 
       if (diff <= 0) {
+        countdown.textContent = "To już dziś! ❤️";
+        return;
+      }
+
+      // Jeśli różnica jest mniejsza niż 12 godzin, pokaż "To już dziś!"
+      if (diff <= 12 * 60 * 60 * 1000) {
         countdown.textContent = "To już dziś! ❤️";
         return;
       }
