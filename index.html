@@ -14,11 +14,11 @@
       font-family: 'Segoe UI', sans-serif;
       background: url('https://images.unsplash.com/photo-1528569937393-e60c05d29b6d?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
       background-size: cover;
-      color: #000; /* Czarny tekst */
+      color: #000;
     }
 
     .overlay {
-      background-color: rgba(245, 245, 220, 0.85); /* Jasny beż z przezroczystością */
+      background-color: rgba(245, 245, 220, 0.85);
       min-height: 100vh;
       padding: 30px 20px;
       display: flex;
@@ -33,54 +33,53 @@
       margin-bottom: 20px;
     }
 
-    /* Nowy styl dla obrazka */
     img {
       width: 100%;
       max-width: 900px;
       height: auto;
       margin-bottom: 30px;
       object-fit: cover;
-      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5)); /* Cień */
+      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
     }
 
     a.button {
-      background-color: #32CD32; /* Jaśniejsza zieleń */
-      color: black; /* Czarny tekst w przycisku */
-      padding: 15px 25px;
+      background-color: #32CD32;
+      color: black;
+      padding: 18px 30px;
       text-decoration: none;
       border-radius: 30px;
-      font-size: 18px;
+      font-size: 20px;
       margin: 10px;
       transition: background 0.3s;
     }
 
     a.button:hover {
-      background-color: #66CD66; /* Jaśniejsza zieleń przy najechaniu */
+      background-color: #66CD66;
     }
 
-    /* Styl dla SVG */
+    /* Poprawiony styl SVG z większymi czcionkami */
     .great-vibes {
       font-family: 'Great Vibes', cursive;
-      font-size: 10vw; /* Zmienna czcionka w zależności od szerokości okna */
+      font-size: 120px;
     }
 
     .antykwa-poltawskiego {
       font-family: 'Antykwa Poltawskiego', serif;
-      font-size: 5vw; /* Zmienna czcionka w zależności od szerokości okna */
+      font-size: 60px;
     }
 
-    /* Styl dla responsywnych linków */
-    .button {
-      font-size: 1.2em;
-      padding: 10px 20px;
-      margin: 5px;
-    }
-
-    /* Zmniejszenie przycisków na mniejszych ekranach */
     @media (max-width: 768px) {
       a.button {
-        font-size: 1em;
-        padding: 12px 18px;
+        font-size: 1.2em;
+        padding: 15px 25px;
+      }
+
+      .great-vibes {
+        font-size: 80px;
+      }
+
+      .antykwa-poltawskiego {
+        font-size: 40px;
       }
     }
   </style>
@@ -88,8 +87,7 @@
 
 <body>
   <div class="overlay">
-    <!-- Osadź SVG bezpośrednio w HTML -->
-    <svg width="100%" height="100%" viewBox="0 0 2481 1749" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+    <svg width="100%" height="100%" viewBox="0 0 2481 1749" xmlns="http://www.w3.org/2000/svg">
       <g>
         <text x="690.667px" y="257.4px" class="great-vibes">Basia</text>
         <text x="1087.8px" y="602.996px" class="great-vibes" style="font-size:200px;">&amp;</text>
@@ -97,10 +95,12 @@
         <text x="821.207px" y="1471.05px" class="antykwa-poltawskiego" style="font-style:italic;">9 · 08 · 2025</text>
       </g>
     </svg>
+    
     <header>Nasze miejsca na mapie</header>
-    <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099!16s%2Fg%2F1232pm15?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank" aria-label="Ceremonia" title="Ceremonia miejsce na mapie">Ceremonia</a>
-    <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646!16s%2Fg%2F11bwqqcn5v?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank" aria-label="Przyjęcie" title="Przyjęcie miejsce na mapie">Przyjęcie</a>
+    
+    <a class="button" href="https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+%C5%9Bw.+J%C3%B3zefa+Rzemie%C5%9Blnika+w+Tarnowcu/@49.9857193,20.9842185,897m/data=!3m1!1e3!4m6!3m5!1s0x473d9b24f1ddae7d:0x3827bb2c4903a8d5!8m2!3d49.987627!4d20.9866099!16s%2Fg%2F1232pm15?entry=ttu" target="_blank" aria-label="Ceremonia">Ceremonia</a>
+
+    <a class="button" href="https://www.google.com/maps/place/Brzozowy+Dworek/@50.0198035,21.0732412,634m/data=!3m1!1e3!4m6!3m5!1s0x473d9c5c4586d37f:0xc5d4abddaa8fa643!8m2!3d50.0215103!4d21.0755646!16s%2Fg%2F11bwqqcn5v?entry=ttu" target="_blank" aria-label="Przyjęcie">Przyjęcie</a>
   </div>
 </body>
-
 </html>
