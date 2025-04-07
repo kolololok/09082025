@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 2481 3508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1.27005,0,0,1.27005,324.135,22.8826)">
-        <text x="214.83px" y="394.624px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:209.965px;">Basia</text>
-        <text x="505.238px" y="500.058px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:112.127px;">&amp;</text>
-        <text x="486.734px" y="747.491px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:209.965px;">Konrad</text>
-    </g>
-    <g transform="matrix(1,0,0,1,0,58.5396)">
-        <text x="391.157px" y="1352.43px" style="font-family:'AntPoltSemiCond-Italic', 'Antykwa Poltawskiego';font-style:italic;font-stretch:semi-condensed;font-size:200px;">CZEKAMY N<tspan x="1432.16px " y="1352.43px ">A</tspan> W<tspan x="1777.76px " y="1352.43px ">A</tspan>S !</text>
+<svg width="100%" height="100%" viewBox="0 0 2481 1749" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,620.079,203.638)">
+        <text x="0px" y="228.8px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:266.667px;">Basia</text>
+        <text x="368.835px" y="362.707px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:142.407px;">&amp;</text>
+        <text x="345.333px" y="676.96px" style="font-family:'GreatVibes-Regular', 'Great Vibes';font-size:266.667px;">Konrad</text>
+        <text x="201.129px" y="1199.42px" style="font-family:'AntPoltSemiCond-Italic', 'Antykwa Poltawskiego';font-style:italic;font-stretch:semi-condensed;font-size:150px;">0<tspan x="278.229px 355.329px 395.679px 426.279px 466.629px 543.729px 620.829px 661.179px 691.779px 732.129px 809.229px 886.329px 963.429px " y="1199.42px 1199.42px 1199.42px 1199.42px 1199.42px 1199.42px 1199.42px 1199.42px 1199.42px 1199.42px 1199.42px 1199.42px 1199.42px ">9 · 08 · 2025</tspan></text>
     </g>
 </svg>
