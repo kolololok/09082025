@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moja Strona</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    header {
+      background-color: #008080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    a.button {
+      background-color: #00bfa5;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #009e88;
+    }
+
+    @media (min-width: 600px) {
+      main {
+        max-width: 600px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Moje Menu Główne
+  </header>
+  <main>
+    <a class="button" href="https://maps.google.com/?q=Warszawa" target="_blank">Zobacz Warszawę</a>
+    <a class="button" href="https://maps.google.com/?q=Kraków" target="_blank">Zobacz Kraków</a>
+  </main>
+</body>
+</html>
